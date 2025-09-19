@@ -43,3 +43,4 @@ Cargo.lock
 
 # Ignore a shortcut to anyrun configs used in development
 anyrun_config
+anyrun_cliphist_config
