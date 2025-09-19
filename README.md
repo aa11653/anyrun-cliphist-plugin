@@ -4,10 +4,7 @@ This repository contains a plugin for [anyrun](https://github.com/anyrun-org/any
 
 ## Demo
 
-<video width="800" controls>
-    <source src="assets/demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+![Demo](./assets/demo.gif)
 
 After the plugin correctly configured, you can
 
