@@ -1,0 +1,1 @@
+Place `libanyrun_cliphist.so` in this directory and update the path in `config.ron` accordingly.

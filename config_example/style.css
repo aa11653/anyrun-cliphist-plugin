@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+window {
+  background: transparent;
+  font-size: 12px;
+}
+
+box.main {
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 0.5em;
+  background-color: alpha(@theme_bg_color, 0.9);
+  box-shadow: 0 0 5px black;
+}
+
+
+text {
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+box.plugin:first-child {
+  margin-top: 5px;
+}
+
+box.plugin.info {
+  min-width: 200px;
+}
+
+label.match.description {
+  font-size: 1em;
+  font-style: italic;
+}
+
+label.plugin.info {
+  font-size: 1em;
+}
+
+.match {
+  line-height: 8px;
+  padding: 0 2px;
+}
+
+.match:selected {
+  background: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+  border-radius: 0.2em;
+  transition: background 0.2s, color 0.1s;
+}
