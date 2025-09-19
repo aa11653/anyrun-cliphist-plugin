@@ -26,6 +26,8 @@ sudo pacman -S cliphist
 
 Build this plugin, now the `.so` file is in `target/release/libanyrun_cliphist.so`
 ```bash
+git clone https://github.com/aa11653/anyrun-cliphist-plugin/
+cd anyrun-cliphist-plugin
 cargo build --release
 ```
 
