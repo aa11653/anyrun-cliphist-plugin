@@ -1,0 +1,20 @@
+[package]
+name = "anyrun_cliphist"
+version = "0.1.0"
+edition = "2021"
+authors = ["aa11653 <zhang_dev@foxmail.com>"]
+description = "A plugin for anyrun to integrate with cliphist."
+license = "MIT"
+repository = "https://github.com/aa11653/anyrun-cliphist-plugin"
+
+[lib]
+crate-type = ["cdylib"] # Required to build a dynamic library that can be loaded by anyrun
+
+[dependencies]
+anyrun-plugin = { git = "https://github.com/anyrun-org/anyrun" }
+abi_stable = "0.11.1"
+thiserror = "2"
+fuzzy-matcher = "*"
+ron = "0.11.0"
+serde = "1.0.225"
+# Any other dependencies you may have
