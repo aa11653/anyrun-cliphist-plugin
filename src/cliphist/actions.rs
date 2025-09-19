@@ -58,14 +58,12 @@ pub fn copy_history(id: u64) -> Result<(), CliphistError> {
         .output()
         .map_err(|e| CliphistError::CommandFailed(make_error_message(e.to_string())))?;
 
-    let decoded_content = String::from_utf8_lossy(&output.stdout);
-
     let copy_output = Command::new("wl-copy")
         .stdin(std::process::Stdio::piped())
         .spawn()
         .and_then(|mut child| {
             if let Some(stdin) = child.stdin.as_mut() {
-                stdin.write_all(decoded_content.as_bytes())?;
+                stdin.write_all(&output.stdout)?;
             }
             child.wait()
         })
